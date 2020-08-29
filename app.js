@@ -13,7 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
       '#caffbf',
       '#ffc6ff',
       '#ffadad',
-      '#bdb2ff'
+      '#bdb2ff',
+      '#ffd6a5'
     ]
   
     //The Tetrominoes
@@ -31,11 +32,18 @@ document.addEventListener('DOMContentLoaded', () => {
       [width, width+1, width+2, width*2]
     ]
   
-    const zTetromino = [
-      [0, width,width+1,width*2+1],
-      [width+1, width+2,width*2,width*2+1],
-      [0, width,width+1,width*2+1],
-      [width+1, width+2,width*2,width*2+1]
+    const zTetromino1 = [
+      [0, width, width+1, width*2+1],
+      [width+1, width+2, width*2, width*2+1],
+      [0, width, width+1, width*2+1],
+      [width+1, width+2, width*2, width*2+1]
+    ]
+
+    const zTetromino2 = [
+      [1, width, width+1, width*2],
+      [width, width+1, width*2+1, width*2+2],
+      [1, width, width+1, width*2],
+      [width, width+1, width*2+1, width*2+2]
     ]
   
     const tTetromino = [
@@ -59,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
       [width,width+1,width+2,width+3]
     ]
   
-    const theTetrominoes = [lTetromino1, lTetromino2, zTetromino, tTetromino, oTetromino, iTetromino]
+    const theTetrominoes = [lTetromino1, lTetromino2, zTetromino1, zTetromino2, tTetromino, oTetromino, iTetromino]
   
     let currentPosition = 4
     let currentRotation = 0
@@ -198,7 +206,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const upNextTetrominoes = [
       [1, displayWidth+1, displayWidth*2+1, 2], //lTetromino1
       [1, displayWidth+1, displayWidth*2+1, 0], //lTetromino2
-      [0, displayWidth, displayWidth+1, displayWidth*2+1], //zTetromino
+      [0, displayWidth, displayWidth+1, displayWidth*2+1], //zTetromino1
+      [1, displayWidth, displayWidth+1, displayWidth*2], //zTetromino2
       [1, displayWidth, displayWidth+1, displayWidth+2], //tTetromino
       [0, 1, displayWidth, displayWidth+1], //oTetromino
       [1, displayWidth+1, displayWidth*2+1, displayWidth*3+1] //iTetromino
