@@ -8,13 +8,13 @@ document.addEventListener('DOMContentLoaded', () => {
     let timerId
     let score = 0
     const colors = [
-      '#a0c4ff',
-      '#9bf6ff',
-      '#caffbf',
-      '#ffc6ff',
-      '#ffadad',
-      '#bdb2ff',
-      '#ffd6a5'
+      '#d3d3d3',
+      '#b1a7a6',
+      '#e5383b',
+      '#ba181b',
+      '#a4161a',
+      '#660708',
+      '#161a1d'
     ]
   
     //The Tetrominoes
