@@ -9,9 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
     let score = 0
     const colors = [
       '#d3d3d3',
-      '#b1a7a6',
       '#e5383b',
       '#ba181b',
+      '#b1a7a6',
       '#a4161a',
       '#660708',
       '#161a1d'
