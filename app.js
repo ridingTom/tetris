@@ -262,10 +262,16 @@ document.addEventListener('DOMContentLoaded', () => {
     //game over
     function gameOver() {
       if (current.some(index => squares[currentPosition + index].classList.contains('taken'))) {
-        scoreDisplay.innerHTML = 'Game over!'
+        scoreDisplay.innerHTML = 'Game over! Please reload the page to start again.'
         clearInterval(timerId)
       }
     }
+
+    //local storage
+    /* localStorage.setItem("state", JSON.stringify(squares))
+    let storage = JSON.parse(localStorage.getItem("state")) || []
+
+    console.log(storage) */
   
   })
   
